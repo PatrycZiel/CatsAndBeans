@@ -61,8 +61,8 @@ public class CatController : MonoBehaviour
             state = MoveMentState.idle;
         }
 
-
         //checking if we are jumping or falling
+
         if (rb.velocity.y > .1f)
         {
             state = MoveMentState.jumping;
