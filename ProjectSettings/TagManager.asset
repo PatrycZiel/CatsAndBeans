@@ -47,6 +47,9 @@ TagManager:
   - name: Foreground
     uniqueID: 1010176205
     locked: 0
+  - name: PickUps
+    uniqueID: 2010561919
+    locked: 0
   - name: Character
     uniqueID: 3011367511
     locked: 0
