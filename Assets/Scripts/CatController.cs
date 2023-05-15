@@ -30,14 +30,18 @@ public class CatController : MonoBehaviour
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * speed, rb.velocity.y);
 
-        //jumping
-        if (Input.GetButtonDown("Jump"))
-        {
-            rb.velocity = new Vector2(rb.velocity.x, hjump );
-        }
+        Jump();
 
         UpdateAnimationState(); 
 
+    }
+
+    private void Jump()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            rb.velocity = new Vector2(rb.velocity.x, hjump);
+        }
     }
 
     private void UpdateAnimationState()

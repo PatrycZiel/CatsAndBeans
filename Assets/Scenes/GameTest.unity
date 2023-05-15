@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 2436233}
   m_Layer: 0
   m_Name: Platform_Full (18)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 70091341}
   m_Layer: 0
   m_Name: Floor (10)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -338,7 +338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70091340}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: 6.54, z: 0}
+  m_LocalPosition: {x: -0.9700001, y: 6.96, z: 0}
   m_LocalScale: {x: 0.2, y: 0.15, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 71467296}
   m_Layer: 0
   m_Name: Platform_Full_BIG
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 154581776}
   m_Layer: 0
   m_Name: Platform_Full (31)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -664,7 +664,7 @@ GameObject:
   - component: {fileID: 276153321}
   m_Layer: 0
   m_Name: Platform_Full (11)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -775,7 +775,7 @@ GameObject:
   - component: {fileID: 332365825}
   m_Layer: 0
   m_Name: Platform_Full (28)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -917,7 +917,7 @@ GameObject:
   - component: {fileID: 420453172}
   m_Layer: 0
   m_Name: Floor (8)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1028,7 +1028,7 @@ GameObject:
   - component: {fileID: 452611012}
   m_Layer: 0
   m_Name: Platform_Full (32)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1139,7 +1139,7 @@ GameObject:
   - component: {fileID: 476908167}
   m_Layer: 0
   m_Name: Platform_Full (9)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1230,7 +1230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476908166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.4900007, y: 7.7199993, z: 0}
+  m_LocalPosition: {x: -4.660001, y: 8.139999, z: 0}
   m_LocalScale: {x: 0.28, y: 0.15, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1250,7 +1250,7 @@ GameObject:
   - component: {fileID: 483090632}
   m_Layer: 0
   m_Name: Platform_Full (21)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1341,7 +1341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483090631}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.58, y: 6.54, z: 0}
+  m_LocalPosition: {x: -16.75, y: 6.96, z: 0}
   m_LocalScale: {x: 0.28, y: 0.15, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1361,7 +1361,7 @@ GameObject:
   - component: {fileID: 484669185}
   m_Layer: 0
   m_Name: Platform_Full (25)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1472,7 +1472,7 @@ GameObject:
   - component: {fileID: 493658694}
   m_Layer: 0
   m_Name: Platform_Full (5)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1563,7 +1563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493658693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.08, y: 13.86, z: 0}
+  m_LocalPosition: {x: -22.25, y: 14.28, z: 0}
   m_LocalScale: {x: 0.28, y: 0.15, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1715,7 +1715,7 @@ GameObject:
   - component: {fileID: 522236756}
   m_Layer: 0
   m_Name: Platform_Full (4)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1826,7 +1826,7 @@ GameObject:
   - component: {fileID: 563154219}
   m_Layer: 0
   m_Name: Platform_Full (6)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1917,7 +1917,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563154218}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.17, y: 16.62, z: 0}
+  m_LocalPosition: {x: -15.34, y: 17.04, z: 0}
   m_LocalScale: {x: 0.28, y: 0.15, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1937,7 +1937,7 @@ GameObject:
   - component: {fileID: 642889003}
   m_Layer: 0
   m_Name: Platform_Full (33)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2114,7 +2114,7 @@ GameObject:
   - component: {fileID: 790478774}
   m_Layer: 0
   m_Name: Platform_Full (27)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2336,7 +2336,7 @@ GameObject:
   - component: {fileID: 828494535}
   m_Layer: 0
   m_Name: Platform_Full (23)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2610,7 +2610,7 @@ GameObject:
   - component: {fileID: 1048053021}
   m_Layer: 0
   m_Name: Platform_Full (35)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2701,7 +2701,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048053020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.1, y: 8.26, z: 0}
+  m_LocalPosition: {x: -23.27, y: 8.68, z: 0}
   m_LocalScale: {x: 0.28, y: 0.15, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2721,7 +2721,7 @@ GameObject:
   - component: {fileID: 1072508498}
   m_Layer: 0
   m_Name: Platform_Full (19)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2832,7 +2832,7 @@ GameObject:
   - component: {fileID: 1106920624}
   m_Layer: 0
   m_Name: Platform_Full_BIG (2)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3091,7 +3091,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1283599785
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -2010621782, guid: 2dbf632f8234b0a40a926d85380e5e8a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3245,7 +3245,7 @@ GameObject:
   - component: {fileID: 1353055893}
   m_Layer: 0
   m_Name: Platform_Full (17)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3356,7 +3356,7 @@ GameObject:
   - component: {fileID: 1388331531}
   m_Layer: 0
   m_Name: Platform_Full (22)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3467,7 +3467,7 @@ GameObject:
   - component: {fileID: 1427924006}
   m_Layer: 0
   m_Name: Platform_Full (20)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3578,7 +3578,7 @@ GameObject:
   - component: {fileID: 1529048309}
   m_Layer: 0
   m_Name: Platform_Full (29)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3753,7 +3753,7 @@ GameObject:
   - component: {fileID: 1539955588}
   m_Layer: 0
   m_Name: Platform_Full (3)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3844,7 +3844,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539955587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.18, y: 10.14, z: 0}
+  m_LocalPosition: {x: -29.35, y: 10.56, z: 0}
   m_LocalScale: {x: 0.28, y: 0.15, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3864,7 +3864,7 @@ GameObject:
   - component: {fileID: 1550316725}
   m_Layer: 0
   m_Name: Platform_Full (26)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3975,7 +3975,7 @@ GameObject:
   - component: {fileID: 1696410002}
   m_Layer: 0
   m_Name: Platform_Full (2)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4281,7 +4281,7 @@ GameObject:
   - component: {fileID: 1722717674}
   m_Layer: 0
   m_Name: Platform_Full (16)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4392,7 +4392,7 @@ GameObject:
   - component: {fileID: 1794080880}
   m_Layer: 0
   m_Name: Platform_Full (7)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4483,7 +4483,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1794080879}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.64, y: 18.99, z: 0}
+  m_LocalPosition: {x: -8.81, y: 19.41, z: 0}
   m_LocalScale: {x: 0.28, y: 0.15, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4503,7 +4503,7 @@ GameObject:
   - component: {fileID: 1802351372}
   m_Layer: 0
   m_Name: Platform_Full (10)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4646,7 +4646,7 @@ GameObject:
   - component: {fileID: 1825471541}
   m_Layer: 0
   m_Name: Platform_Full (1)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4757,7 +4757,7 @@ GameObject:
   - component: {fileID: 1886420790}
   m_Layer: 0
   m_Name: Platform_Full (30)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4899,7 +4899,7 @@ GameObject:
   - component: {fileID: 1942170397}
   m_Layer: 0
   m_Name: Platform_Full (24)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5010,7 +5010,7 @@ GameObject:
   - component: {fileID: 1962280597}
   m_Layer: 0
   m_Name: Floor (12)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5101,7 +5101,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962280596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.190997, y: 6.5199995, z: 0}
+  m_LocalPosition: {x: 5.020997, y: 6.9399996, z: 0}
   m_LocalScale: {x: 0.2, y: 0.15, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5152,7 +5152,7 @@ GameObject:
   - component: {fileID: 1989726613}
   m_Layer: 0
   m_Name: Platform_Full (12)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5263,7 +5263,7 @@ GameObject:
   - component: {fileID: 2036252830}
   m_Layer: 0
   m_Name: Platform_Full (13)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5354,7 +5354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036252829}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.696997, y: 6.4639997, z: 0}
+  m_LocalPosition: {x: -8.866997, y: 6.884, z: 0}
   m_LocalScale: {x: 0.28, y: 0.15, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5405,7 +5405,7 @@ GameObject:
   - component: {fileID: 2126238990}
   m_Layer: 0
   m_Name: Floor (11)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5496,7 +5496,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126238989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.1730022, y: 6.554, z: 0}
+  m_LocalPosition: {x: 2.0030022, y: 6.974, z: 0}
   m_LocalScale: {x: 0.2, y: 0.15, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
