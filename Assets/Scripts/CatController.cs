@@ -6,10 +6,12 @@ using UnityEngine;
 public class CatController : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private BoxCollider2D coll;
     private Animator anim;
     private SpriteRenderer sprite;
 
-    [SerializeField]private float speed = 7f;
+    [SerializeField] private LayerMask jumpableGround;
+    [SerializeField] private float speed = 7f;
     [SerializeField] private float hjump = 9f;
   
     private float dirX = 0f; //just for safety reasons
@@ -20,6 +22,7 @@ public class CatController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        coll = GetComponent<BoxCollider2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
@@ -38,7 +41,7 @@ public class CatController : MonoBehaviour
 
     private void Jump()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, hjump);
         }
@@ -77,4 +80,10 @@ public class CatController : MonoBehaviour
         }
         anim.SetInteger("state", (int)state);
     }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+    }
+
 }
