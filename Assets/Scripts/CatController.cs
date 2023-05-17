@@ -13,7 +13,7 @@ public class CatController : MonoBehaviour
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private float speed = 7f;
     [SerializeField] private float hjump = 9f;
-  
+
     private float dirX = 0f; //just for safety reasons
     // idle 0 , running 1, jumping 2, falling 3
     private enum MoveMentState { idle, running, jumping, falling }
@@ -35,7 +35,7 @@ public class CatController : MonoBehaviour
 
         Jump();
 
-        UpdateAnimationState(); 
+        UpdateAnimationState();
 
     }
 
