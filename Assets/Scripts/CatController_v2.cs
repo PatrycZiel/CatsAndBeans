@@ -1,16 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEngine;
-using UnityEngine.UI;
+//using System.Collections;
+//using System.Collections.Generic;
+//using Unity.VisualScripting;
+//using UnityEngine;
+//using UnityEngine.UI;
 
-//public class CatController : MonoBehaviour
+//public class CatController_v2 : MonoBehaviour
 //{
 //    private Rigidbody2D rb;
 //    private Animator anim;
 //    private SpriteRenderer sprite;
 
-//    // added by Yu:
+//     added by Yu:
 //    private float boostTimer;
 //    private bool boosting;
 //    private float doubleJumping;
@@ -18,20 +18,20 @@ using UnityEngine.UI;
 //    public float jumpForce = 20;
 //    public float gravity = -9.81f;
 //    float velocity;
-//    [SerializeField] 
+//    [SerializeField]
 //    private Text beanCounter;
 //    private int beanAmount;
 //    private float jumpheight = 30f;
 //    public float jumpAmount = 30;
-//    // end of Yushitterie
-//    // also sorry for the amount of if's I take it on me - Yu
+//     end of Yushitterie
+//     also sorry for the amount of if's I take it on me - Yu
 
 
 //    [SerializeField] private float speed = 7f;
 //    [SerializeField] private float hjump = 9f;
 
 //    private float dirX = 0f; //just for safety reasons
-//    // idle 0 , running 1, jumping 2, falling 3
+//     idle 0 , running 1, jumping 2, falling 3
 //    private enum MoveMentState { idle, running, jumping, falling }
 
 
@@ -41,7 +41,7 @@ using UnityEngine.UI;
 //        sprite = GetComponent<SpriteRenderer>();
 //        anim = GetComponent<Animator>();
 
-//        // Yu addition:
+//         Yu addition:
 //        speed = 7;
 //        boostTimer = 0;
 //        boosting = false;
@@ -52,14 +52,14 @@ using UnityEngine.UI;
 
 //    void Update()
 //    {
-//        //walking
+//        walking
 //        dirX = Input.GetAxisRaw("Horizontal");
 //        rb.velocity = new Vector2(dirX * speed, rb.velocity.y);
 
-//        //jumping
+//        jumping
 //        if (Input.GetButtonDown("Jump"))
 //        {
-//            rb.velocity = new Vector2(rb.velocity.x, hjump );
+//            rb.velocity = new Vector2(rb.velocity.x, hjump);
 //        }
 
 //        UpdateAnimationState();
@@ -67,7 +67,7 @@ using UnityEngine.UI;
 //        if (boosting)
 //        {
 //            boostTimer += Time.deltaTime;
-//            if(boostTimer >= 3)
+//            if (boostTimer >= 3)
 //            {
 //                speed = 7;
 //                boostTimer = 0;
@@ -77,22 +77,22 @@ using UnityEngine.UI;
 //        if (doublejumping)
 //        {
 //            doubleJumping += Time.deltaTime;
-//            if(doubleJumping >= 3)
+//            if (doubleJumping >= 3)
 //            {
 
 //            }
 //        }
-//        // bean counts
+//         bean counts
 //        beanCounter.text = "Beans: " + beanAmount;
 //    }
-  
-//    // collision detection: (yu addon)
+
+//     collision detection: (yu addon)
 //    private void OnTriggerEnter2D(Collider2D other)
 //    {
-//        if(other.tag == "SpeedBoost")
+//        if (other.tag == "SpeedBoost")
 //        {
 //            boosting = true;
-//            speed = 14; 
+//            speed = 14;
 //        }
 
 //        if (other.tag == "Bean")
@@ -100,22 +100,22 @@ using UnityEngine.UI;
 //            beanAmount += 1;
 //        }
 
-//        if(other.tag == "JumpBoost")
+//        if (other.tag == "JumpBoost")
 //        {
-          
+
 //        }
 
 //        Destroy(other.gameObject);
-//        // nie wiem czemu to sie na czerwono robi, ale dzia³a, nie ruszaæ - Yu
+//         nie wiem czemu to sie na czerwono robi, ale dzia³a, nie ruszaæ - Yu
 //    }
 
 
-   
+
 //    private void UpdateAnimationState()
 //    {
 //        MoveMentState state;
 
-//        //animations for running
+//        animations for running
 
 //        if (dirX > 0f) //we move right
 //        {
@@ -132,7 +132,7 @@ using UnityEngine.UI;
 //            state = MoveMentState.idle;
 //        }
 
-//        //checking if we are jumping or falling
+//        checking if we are jumping or falling
 
 //        if (rb.velocity.y > .1f)
 //        {
