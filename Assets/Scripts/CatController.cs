@@ -6,10 +6,17 @@ using UnityEngine;
 public class CatController : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private BoxCollider2D coll;
     private Animator anim;
     private SpriteRenderer sprite;
 
-    [SerializeField]private float speed = 7f;
+   
+
+    private float jumptimer;
+    private bool jumping;
+
+    [SerializeField] private LayerMask jumpableGround;
+    [SerializeField] private float speed = 7f;
     [SerializeField] private float hjump = 9f;
   
     private float dirX = 0f; //just for safety reasons
@@ -20,8 +27,14 @@ public class CatController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        coll = GetComponent<BoxCollider2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+
+        
+
+        jumptimer = 0;
+        jumping = false;
     }
 
     void Update()
@@ -30,15 +43,71 @@ public class CatController : MonoBehaviour
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * speed, rb.velocity.y);
 
-        //jumping
-        if (Input.GetButtonDown("Jump"))
-        {
-            rb.velocity = new Vector2(rb.velocity.x, hjump );
-        }
+        Jump();
 
-        UpdateAnimationState(); 
+        UpdateAnimationState();
+
+      
 
     }
+
+    private void Jump()
+    {
+        if (Input.GetButtonDown("Jump") && IsGrounded())
+        {
+            rb.velocity = new Vector2(rb.velocity.x, hjump);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "SpeedBoost")
+        {
+            StartCoroutine(SpeedBoostTimer());
+        }
+
+        if (other.tag == "Leaf")
+        {
+            StartCoroutine(StopTimer());
+        }
+        
+
+        if(other.tag == "Mocha")
+        {
+            StartCoroutine(JumpBoostTimer());
+            StartCoroutine(SpeedBoostTimer());
+        }
+
+        if(other.tag == "JumpBoost")
+        {
+            StartCoroutine(JumpBoostTimer());
+        }
+
+        Destroy(other.gameObject);
+    }
+
+    private IEnumerator JumpBoostTimer()
+    {
+        hjump *= 2;
+        yield return new WaitForSeconds(3f);
+        hjump /= 2;
+    }
+
+    private IEnumerator SpeedBoostTimer()
+    {
+        speed *= 2;
+        yield return new WaitForSeconds(3f);
+        speed /= 2;
+    }
+
+    private IEnumerator StopTimer()
+    {
+        speed = 0;
+        yield return new WaitForSeconds(3f);
+        speed = 7;
+    }
+
+
 
     private void UpdateAnimationState()
     {
@@ -73,4 +142,10 @@ public class CatController : MonoBehaviour
         }
         anim.SetInteger("state", (int)state);
     }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+    }
+
 }
