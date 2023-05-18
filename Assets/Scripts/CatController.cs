@@ -10,10 +10,15 @@ public class CatController : MonoBehaviour
     private Animator anim;
     private SpriteRenderer sprite;
 
+   
+
+    private float jumptimer;
+    private bool jumping;
+
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private float speed = 7f;
     [SerializeField] private float hjump = 9f;
-
+  
     private float dirX = 0f; //just for safety reasons
     // idle 0 , running 1, jumping 2, falling 3
     private enum MoveMentState { idle, running, jumping, falling }
@@ -25,6 +30,11 @@ public class CatController : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+
+        
+
+        jumptimer = 0;
+        jumping = false;
     }
 
     void Update()
@@ -37,6 +47,8 @@ public class CatController : MonoBehaviour
 
         UpdateAnimationState();
 
+      
+
     }
 
     private void Jump()
@@ -46,6 +58,56 @@ public class CatController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, hjump);
         }
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "SpeedBoost")
+        {
+            StartCoroutine(SpeedBoostTimer());
+        }
+
+        if (other.tag == "Leaf")
+        {
+            StartCoroutine(StopTimer());
+        }
+        
+
+        if(other.tag == "Mocha")
+        {
+            StartCoroutine(JumpBoostTimer());
+            StartCoroutine(SpeedBoostTimer());
+        }
+
+        if(other.tag == "JumpBoost")
+        {
+            StartCoroutine(JumpBoostTimer());
+        }
+
+        Destroy(other.gameObject);
+    }
+
+    private IEnumerator JumpBoostTimer()
+    {
+        hjump *= 2;
+        yield return new WaitForSeconds(3f);
+        hjump /= 2;
+    }
+
+    private IEnumerator SpeedBoostTimer()
+    {
+        speed *= 2;
+        yield return new WaitForSeconds(3f);
+        speed /= 2;
+    }
+
+    private IEnumerator StopTimer()
+    {
+        speed = 0;
+        yield return new WaitForSeconds(3f);
+        speed = 7;
+    }
+
+
 
     private void UpdateAnimationState()
     {
