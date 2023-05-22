@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - ground
+  - JumpBoost
+  - SpeedBoost
+  - Leaf
+  - Mocha
+  - Matcha
+  - Bean
   layers:
   - Default
   - TransparentFX
