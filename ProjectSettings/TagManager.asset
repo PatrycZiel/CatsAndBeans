@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ground
+  - JumpBoost
+  - SpeedBoost
+  - Leaf
+  - Mocha
+  - Matcha
+  - Bean
   layers:
   - Default
   - TransparentFX
@@ -11,7 +18,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 
@@ -46,6 +53,9 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 1010176205
+    locked: 0
+  - name: PickUps
+    uniqueID: 2010561919
     locked: 0
   - name: Character
     uniqueID: 3011367511
