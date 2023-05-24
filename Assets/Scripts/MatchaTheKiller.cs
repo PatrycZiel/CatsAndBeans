@@ -5,13 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MatchaTheKiller : MonoBehaviour
 {
-    public int Respawn;
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(Respawn);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
