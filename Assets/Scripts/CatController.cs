@@ -38,6 +38,7 @@ public class CatController : MonoBehaviour
 
         UpdateAnimationState();
 
+
     }
 
     private void Jump()
