@@ -46,15 +46,15 @@ The following packages were updated:
   com.unity.timeline from version 1.6.2 to 1.6.4
   com.unity.visualscripting from version 1.7.2 to 1.7.8
 
-=== Wed May 24 20:16:44 2023
+
 
 Packages were changed.
 Update Mode: updateDependencies
 
-The following packages were added:
-  com.unity.2d.sprite@1.0.0
-  com.unity.2d.tilemap@1.0.0
-  com.unity.ads@3.7.5
-  com.unity.analytics@3.6.12
-  com.unity.purchasing@4.1.4
-  com.unity.xr.legacyinputhelpers@2.1.9
+
+The following packages were updated:
+  com.unity.collab-proxy from version 1.15.17 to 2.0.3
+  com.unity.ide.rider from version 3.0.14 to 3.0.20
+  com.unity.ide.visualstudio from version 2.0.15 to 2.0.18
+  com.unity.render-pipelines.universal from version 12.1.7 to 12.1.11
+  com.unity.visualscripting from version 1.7.8 to 1.8.0

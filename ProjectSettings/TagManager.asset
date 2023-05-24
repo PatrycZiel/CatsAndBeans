@@ -11,7 +11,11 @@ TagManager:
   - Mocha
   - Matcha
   - Bean
+
+  - Caramel
+
   - Death
+
   layers:
   - Default
   - TransparentFX
