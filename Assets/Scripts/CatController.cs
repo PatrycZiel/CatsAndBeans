@@ -10,11 +10,6 @@ public class CatController : MonoBehaviour
     private Animator anim;
     private SpriteRenderer sprite;
 
-   
-
-    private float jumptimer;
-    private bool jumping;
-
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private float speed = 7f;
     [SerializeField] private float hjump = 9f;
@@ -31,10 +26,6 @@ public class CatController : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
 
-        
-
-        jumptimer = 0;
-        jumping = false;
     }
 
     void Update()
@@ -47,7 +38,6 @@ public class CatController : MonoBehaviour
 
         UpdateAnimationState();
 
-      
 
     }
 
@@ -64,11 +54,13 @@ public class CatController : MonoBehaviour
         if (other.tag == "SpeedBoost")
         {
             StartCoroutine(SpeedBoostTimer());
+            Destroy(other.gameObject);
         }
 
         if (other.tag == "Leaf")
         {
             StartCoroutine(StopTimer());
+            Destroy(other.gameObject);
         }
         
 
@@ -76,14 +68,21 @@ public class CatController : MonoBehaviour
         {
             StartCoroutine(JumpBoostTimer());
             StartCoroutine(SpeedBoostTimer());
+            Destroy(other.gameObject);
         }
 
         if(other.tag == "JumpBoost")
         {
             StartCoroutine(JumpBoostTimer());
+            Destroy(other.gameObject);
         }
 
-        Destroy(other.gameObject);
+        if (other.tag == "Caramel")
+        {
+            StartCoroutine(Stuck());
+        }
+
+       
     }
 
     private IEnumerator JumpBoostTimer()
@@ -107,6 +106,15 @@ public class CatController : MonoBehaviour
         speed = 7;
     }
 
+    private IEnumerator Stuck()
+    {
+        speed /= 2;
+        hjump = 6;
+        yield return new WaitForSeconds(3f);
+        speed *= 2;
+        hjump = 9; 
+
+    }
 
 
     private void UpdateAnimationState()

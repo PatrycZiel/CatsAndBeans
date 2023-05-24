@@ -11,12 +11,16 @@ TagManager:
   - Mocha
   - Matcha
   - Bean
+
+  - Caramel
+
   - Death
+
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - background2
   - Water
   - UI
   - Ground
@@ -46,6 +50,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackGround2
+    uniqueID: 1442534519
+    locked: 0
   - name: BackGround
     uniqueID: 1423737537
     locked: 0
