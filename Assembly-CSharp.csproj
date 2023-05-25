@@ -62,6 +62,8 @@
     <Compile Include="Assets\Scripts\CatController.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\CatsLife.cs" />
+    <Compile Include="Assets\Scripts\BeanCollecter.cs" />
+    <Compile Include="Assets\Scripts\BeanCounter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
