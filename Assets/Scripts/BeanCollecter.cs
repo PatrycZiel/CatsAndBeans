@@ -17,7 +17,6 @@ public class BeanCollecter : MonoBehaviour
         if (c2D.CompareTag("Player"))
         {
             totalbeans++;
-            Debug.Log("Beans: " + BeanCollecter.totalbeans);
             Destroy(gameObject);
         }
     }
