@@ -13,6 +13,8 @@ TagManager:
   - Bean
   - Caramel
   - Death
+  - End
+  - Middle
   layers:
   - Default
   - TransparentFX

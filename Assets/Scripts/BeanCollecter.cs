@@ -6,6 +6,11 @@ public class BeanCollecter : MonoBehaviour
 {
     public static int  totalbeans = 0;
 
+    //sounds
+    public AudioSource pickingUp;
+    public AudioClip pickedUp;
+
+
     void Start()
     {
         GetComponent<Collider2D>().isTrigger = true;
@@ -18,6 +23,14 @@ public class BeanCollecter : MonoBehaviour
         {
             totalbeans++;
             Destroy(gameObject);
+            pickingUp.Play();
         }
+        
     }
+
+    public void Zero()
+    {
+        totalbeans = 0;
+    }
+
 }

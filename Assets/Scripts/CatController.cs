@@ -18,6 +18,19 @@ public class CatController : MonoBehaviour
     // idle 0 , running 1, jumping 2, falling 3
     private enum MoveMentState { idle, running, jumping, falling }
 
+    //sounds
+    public AudioSource jump;
+    public AudioSource run;
+    public AudioSource doubleboost;
+    public AudioSource hurt;
+    public AudioSource stuck;
+
+    public AudioClip jumpies;
+    public AudioClip runnies;
+    public AudioClip doubleboosties;
+    public AudioClip hurties;
+    public AudioClip stuckies;
+
 
     void Start()
     {
@@ -54,12 +67,14 @@ public class CatController : MonoBehaviour
         {
             StartCoroutine(SpeedBoostTimer());
             Destroy(other.gameObject);
+            run.Play();
         }
 
         if (other.tag == "Leaf")
         {
             StartCoroutine(StopTimer());
             Destroy(other.gameObject);
+            hurt.Play();
         }
         
 
@@ -68,18 +83,22 @@ public class CatController : MonoBehaviour
             StartCoroutine(JumpBoostTimer());
             StartCoroutine(SpeedBoostTimer());
             Destroy(other.gameObject);
+            doubleboost.Play();
         }
 
         if(other.tag == "JumpBoost")
         {
             StartCoroutine(JumpBoostTimer());
             Destroy(other.gameObject);
+            jump.Play();
         }
 
         if (other.tag == "Caramel")
         {
             StartCoroutine(Stuck());
+            stuck.Play();
         }
+
 
        
     }

@@ -19,6 +19,7 @@ public class BeanCounter : MonoBehaviour
         if(counterText.text != BeanCollecter.totalbeans.ToString())
         {
             counterText.text = BeanCollecter.totalbeans.ToString();
+            Debug.Log("Score Updated");
         }
     }
 }
